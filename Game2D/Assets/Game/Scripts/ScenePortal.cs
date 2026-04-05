@@ -1,0 +1,13 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class ScenePortal : MonoBehaviour
+{
+    [SerializeField] private string SceneName;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.CompareTag("Player")) return;
+        SceneManager.LoadScene(SceneName);
+    }
+}
