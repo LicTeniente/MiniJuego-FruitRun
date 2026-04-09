@@ -48,8 +48,16 @@ public class ItemRecolectable_V2 : MonoBehaviour
 
         Debug.Log("Recolectó: " + itemName + " | Valor: " + itemValue);
 
-        // Ajusta esta línea a tu GameManager real
-        GameManager.Instance.SumarItem(itemName, itemValue);
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.SumarItem(itemName, itemValue);
+        }
+
+        MissionManager missionMgr = Object.FindFirstObjectByType<MissionManager>();
+        if (missionMgr != null)
+        {
+            missionMgr.OnFruitCollected(itemName, rareza);
+        }
 
         Destroy(gameObject);
     }

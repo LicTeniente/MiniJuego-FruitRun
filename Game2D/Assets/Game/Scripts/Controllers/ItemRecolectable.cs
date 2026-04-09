@@ -14,11 +14,14 @@ public class ItemRecolectable : MonoBehaviour
 
         GameManager.Instance.AddItem(_itemData);
 
+        MissionManager missionMgr = Object.FindFirstObjectByType<MissionManager>();
+        if (missionMgr != null)
+        {
+            missionMgr.OnFruitCollected(_itemData.itemType.ToString(), "Comun");
+        }
+
         if (_collectSound != null)
             AudioSource.PlayClipAtPoint(_collectSound, transform.position);
-
-        //if (_audioSource != null && _collectSound != null)
-        //    _audioSource.PlayOneShot(_collectSound);
 
         AudioSource.PlayClipAtPoint(_collectSound, transform.position);
 
