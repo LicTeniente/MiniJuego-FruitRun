@@ -43,9 +43,9 @@ public class GameManager : MonoBehaviour
         globalTime = 0;
     }
 
-    void Update() 
-    { 
-    
+    void Update()
+    {
+
     }
 
     public void TotalTime(float timeScene)
@@ -106,4 +106,13 @@ public class GameManager : MonoBehaviour
     public int TotalMelon { get => totalMelon; set => totalMelon = value; }
     public int TotalPineapple { get => totalPineapple; set => totalPineapple = value; }
     public int TotalStrawberry { get => totalStrawberry; set => totalStrawberry = value; }
+
+    public void CerrarJuego()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+              Application.Quit();
+        #endif
+    }
 }
