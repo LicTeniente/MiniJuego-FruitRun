@@ -51,6 +51,9 @@ public class ItemRecolectable_V2 : MonoBehaviour
         if (GameManager.Instance != null)
         {
             GameManager.Instance.SumarItem(itemName, itemValue);
+
+            if (InventoryUI.Instance != null)
+                InventoryUI.Instance.UpdateUI();
         }
 
         MissionManager missionMgr = Object.FindFirstObjectByType<MissionManager>();
