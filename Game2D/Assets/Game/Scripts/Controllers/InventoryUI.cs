@@ -11,13 +11,13 @@ public class InventoryUI : MonoBehaviour
 
     [Header("Contadores de frutas")]
     public TextMeshProUGUI txtCountVApple;
+    public TextMeshProUGUI txtCountVBananas;
+    public TextMeshProUGUI txtCountVCherries;
+    public TextMeshProUGUI txtCountVKiwi;
+    public TextMeshProUGUI txtCountVMelon;
     public TextMeshProUGUI txtCountVOrange;
-    //public TextMeshProUGUI txtCountVBanana;
-    //public TextMeshProUGUI txtCountVKiwi;
-    //public TextMeshProUGUI txtCountVCherries;
-    //public TextMeshProUGUI txtCountVMelon;
-    //public TextMeshProUGUI txtCountVPineapple;
-    //public TextMeshProUGUI txtCountVStrawberry;
+    public TextMeshProUGUI txtCountVPineapple;
+    public TextMeshProUGUI txtCountVStrawberry;
 
     void Awake()
     {
@@ -52,11 +52,11 @@ public class InventoryUI : MonoBehaviour
 
         if (txtCountVApple != null) txtCountVApple.text = "x" + GameManager.Instance.TotalApple;
         if (txtCountVOrange != null) txtCountVOrange.text = "x" + GameManager.Instance.TotalOrange;
-        //if (txtCountVBanana != null) txtCountVBanana.text = "x" + GameManager.Instance.TotalBanana;
-        //if (txtCountVKiwi != null) txtCountVKiwi.text = "x" + GameManager.Instance.TotalKiwi;
-        //if (txtCountVCherries != null) txtCountVCherries.text = "x" + GameManager.Instance.TotalCherries;
-        //if (txtCountVMelon != null) txtCountVMelon.text = "x" + GameManager.Instance.TotalMelon;
-        //if (txtCountVPineapple != null) txtCountVPineapple.text = "x" + GameManager.Instance.TotalPineapple;
-        //if (txtCountVStrawberry != null) txtCountVStrawberry.text = "x" + GameManager.Instance.TotalStrawberry;
+        if (txtCountVBananas != null) txtCountVBananas.text = "x" + GameManager.Instance.TotalBananas;
+        if (txtCountVKiwi != null) txtCountVKiwi.text = "x" + GameManager.Instance.TotalKiwi;
+        if (txtCountVCherries != null) txtCountVCherries.text = "x" + GameManager.Instance.TotalCherries;
+        if (txtCountVMelon != null) txtCountVMelon.text = "x" + GameManager.Instance.TotalMelon;
+        if (txtCountVPineapple != null) txtCountVPineapple.text = "x" + GameManager.Instance.TotalPineapple;
+        if (txtCountVStrawberry != null) txtCountVStrawberry.text = "x" + GameManager.Instance.TotalStrawberry;
     }
 }
