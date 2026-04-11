@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2225220627045663977}
   - component: {fileID: 4851380053194677854}
   - component: {fileID: 8607649651758058315}
-  - component: {fileID: 1946174677481994718}
   m_Layer: 0
   m_Name: 'Orange_0 '
   m_TagString: Untagged
@@ -138,18 +137,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &1946174677481994718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5663865112341075494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74a47f2944c888c48be9c544e9cc2fb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemRecolectable
-  _itemData: {fileID: 11400000, guid: 2df19ef1a0ab96046a66c0468f4ac1b1, type: 2}
-  _collectSound: {fileID: 0}
-  _audioSource: {fileID: 0}

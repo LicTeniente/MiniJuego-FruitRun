@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8028489968722049381}
   - component: {fileID: 1348260664833385659}
   - component: {fileID: 5781767532755718211}
-  - component: {fileID: 2746477104330914139}
   m_Layer: 0
   m_Name: Apple_0
   m_TagString: Untagged
@@ -138,16 +137,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!114 &2746477104330914139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 787171388613799063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74a47f2944c888c48be9c544e9cc2fb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemRecolectable
-  _itemData: {fileID: 11400000, guid: bc2440c9e5efed24596fd6bfaa3362c6, type: 2}
