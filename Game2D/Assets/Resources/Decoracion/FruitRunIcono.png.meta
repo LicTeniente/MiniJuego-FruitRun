@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: db219219d12f90f4aacc0f5f4affb569
+guid: 1133916f8f1fd0949acfc72326b6148f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -165430948779918170
-    second: Icono_0
+      213: 4635145474733146761
+    second: FruitRunIcono_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icono_0
+      name: FruitRunIcono_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6acfd17bd6544bdf0800000000000000
-      internalID: -165430948779918170
+      spriteID: 9828abf4048535040800000000000000
+      internalID: 4635145474733146761
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Icono_0: -165430948779918170
+      FruitRunIcono_0: 4635145474733146761
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
