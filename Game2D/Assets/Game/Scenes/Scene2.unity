@@ -540,11 +540,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f7e16c81ca44894790c22deb87158dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissionManager
-  misionesIdsConfiguradas: 03000000
+  panelVictoria: {fileID: 817504619}
+  misionesIdsConfiguradas: 04000000
   misionesActivas:
-  - id: 0
-    titulo: 
-    descripcion: 
+  - id: 4
+    titulo: Gran cosecha
+    descripcion: Recolecta 1 Pineapple y 1 Melon.
     isCompleted: 0
 --- !u!4 &369628911
 Transform:
@@ -831,14 +832,6 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 177327639}
   - {fileID: 1136841073}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!4 &793223794
 Transform:
   m_ObjectHideFlags: 0
