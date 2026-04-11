@@ -5,11 +5,11 @@ public class SummaryScreen : MonoBehaviour
 {
     [Header("Resumen de frutas")]
     public TextMeshProUGUI txtApple;
-    public TextMeshProUGUI txtOrange;
-    public TextMeshProUGUI txtBanana;
-    public TextMeshProUGUI txtKiwi;
+    public TextMeshProUGUI txtBananas;
     public TextMeshProUGUI txtCherries;
+    public TextMeshProUGUI txtKiwi;
     public TextMeshProUGUI txtMelon;
+    public TextMeshProUGUI txtOrange;
     public TextMeshProUGUI txtPineapple;
     public TextMeshProUGUI txtStrawberry;
 
@@ -19,7 +19,7 @@ public class SummaryScreen : MonoBehaviour
 
         txtApple.text = "Manzanas: " + GameManager.Instance.TotalApple;
         txtOrange.text = "Naranjas: " + GameManager.Instance.TotalOrange;
-        txtBanana.text = "Bananas: " + GameManager.Instance.TotalBanana;
+        txtBananas.text = "Bananas: " + GameManager.Instance.TotalBananas;
         txtKiwi.text = "Kiwis: " + GameManager.Instance.TotalKiwi;
         txtCherries.text = "Cerezas: " + GameManager.Instance.TotalCherries;
         txtMelon.text = "Melones: " + GameManager.Instance.TotalMelon;
