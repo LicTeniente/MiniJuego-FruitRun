@@ -118,13 +118,5 @@ public class GameManager : MonoBehaviour
     public int CountMelon { get => countMelon; }
     public int CountPineapple { get => countPineapple; }
     public int CountStrawberry { get => countStrawberry; }
-
-    public void Salir()
-    {
-        
-        Application.Quit();
-
-        
-        Debug.Log("El juego se ha cerrado");
-    }
 }
+
