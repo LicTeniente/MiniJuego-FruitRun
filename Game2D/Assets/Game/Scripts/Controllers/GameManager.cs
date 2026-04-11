@@ -107,12 +107,12 @@ public class GameManager : MonoBehaviour
     public int TotalPineapple { get => totalPineapple; set => totalPineapple = value; }
     public int TotalStrawberry { get => totalStrawberry; set => totalStrawberry = value; }
 
-    public void CerrarJuego()
+    public void Salir()
     {
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #else
-              Application.Quit();
-        #endif
+        
+        Application.Quit();
+
+        
+        Debug.Log("El juego se ha cerrado");
     }
 }
