@@ -7,6 +7,8 @@ public class MissionManager : MonoBehaviour
     [Header("Configuración de la Escena")]
     [Header("Panel de Victoria")]
     public GameObject panelVictoria;
+    [Header("Portal")]
+    public GameObject portal;
     [Tooltip("Escribe los IDs de las misiones que se habilitarán en esta escena (Ej: 1 o 3)")]
     public List<int> misionesIdsConfiguradas = new List<int> { 1 };
 
@@ -90,22 +92,21 @@ public class MissionManager : MonoBehaviour
             {
                 mision.isCompleted = true;
                 Debug.Log($"¡Misión completada!: {mision.titulo}");
-
-                // Verifica si todas están completas
-                if (SonTodasLasMisionesCompletadas())
-                {
-                    if (panelVictoria != null)
-                        panelVictoria.SetActive(true);
-                }
             }
+        }
+        if (SonTodasLasMisionesCompletadas())
+        {
+            if (panelVictoria != null)
+                panelVictoria.SetActive(true);
+
+            if (portal != null)
+                portal.SetActive(true);
         }
     }
 
     public bool SonTodasLasMisionesCompletadas()
     {
         if (misionesActivas.Count == 0) return false;
-
-        CheckMissions(); // Actualiza por si acaso antes de revisar
 
         foreach (var mision in misionesActivas)
         {

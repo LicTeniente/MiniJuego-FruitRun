@@ -62,19 +62,6 @@ public class GameManager : MonoBehaviour
         globalTime += timeScene;
     }
 
-    public void AddItem(ItemData item)
-    {
-        switch (item.itemType)
-        {
-            //case ItemType.Apple:
-            //    totalApples += item.itemValue;
-            //    break;
-            //case ItemType.Orange:
-            //    totalOranges += item.itemValue;
-            //    break;
-        }
-    }
-
     public void SumarItem(string itemName, int itemValue)
     {
         switch (itemName)

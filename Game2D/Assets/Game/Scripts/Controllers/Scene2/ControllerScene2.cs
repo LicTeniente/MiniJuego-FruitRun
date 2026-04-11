@@ -1,27 +1,38 @@
 using UnityEngine;
+using TMPro;
 
 public class ControllerScene2 : MonoBehaviour
 {
-    public Timer tiempoScene;
+
+    public TextMeshProUGUI txtCountVApple;
+    public TextMeshProUGUI txtCountVBananas;
+    public TextMeshProUGUI txtCountVCherries;
+    public TextMeshProUGUI txtCountVKiwi;
+    public TextMeshProUGUI txtCountVMelon;
+    public TextMeshProUGUI txtCountVOrange;
+    public TextMeshProUGUI txtCountVPineapple;
+    public TextMeshProUGUI txtCountVStrawberry;
 
     void Start()
     {
-        if (GameManager.Instance != null)
-            ShowTimeGameManager();
-        else
-            Debug.LogError("GameManager no está inicializado en Scene2");
+     
     }
 
-    void Update() { }
-
-    public void ShowTimeGameManager()
+    void Update()
     {
-        Debug.Log("Tiempo que paso en escena1 " + GameManager.Instance.GlobalTime);
+        if (GameManager.Instance == null) return;
+        GetCountItems();
     }
 
-    public void GetTimePassGM()
+    public void GetCountItems()
     {
-        float timeStop = tiempoScene.StopTime;
-        GameManager.Instance.TotalTime(timeStop);
+        txtCountVApple.text = GameManager.Instance.CountApple.ToString();
+        txtCountVBananas.text = GameManager.Instance.CountBananas.ToString();
+        txtCountVCherries.text = GameManager.Instance.CountCherries.ToString();
+        txtCountVKiwi.text = GameManager.Instance.CountKiwi.ToString();
+        txtCountVMelon.text = GameManager.Instance.CountMelon.ToString();
+        txtCountVOrange.text = GameManager.Instance.CountOrange.ToString();
+        txtCountVPineapple.text = GameManager.Instance.CountPineapple.ToString();
+        txtCountVStrawberry.text = GameManager.Instance.CountStrawberry.ToString();
     }
-}
+}   

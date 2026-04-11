@@ -3,8 +3,6 @@ using TMPro;
 
 public class ControllerScene1 : MonoBehaviour
 {
-    public Timer tiempoScene;
-
     public TextMeshProUGUI txtCountVApple;
     public TextMeshProUGUI txtCountVBananas;
     public TextMeshProUGUI txtCountVCherries;
@@ -23,11 +21,6 @@ public class ControllerScene1 : MonoBehaviour
         GetCountItems();
     }
 
-    public void GetTimePassGM()
-    {
-        float timeStop = tiempoScene.StopTime;
-        GameManager.Instance.TotalTime(timeStop);
-    }
 
     public void GetCountItems()
     {
