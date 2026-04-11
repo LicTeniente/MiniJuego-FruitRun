@@ -297,7 +297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.8549, y: -5.0726}
+  m_AnchoredPosition: {x: 13, y: -33}
   m_SizeDelta: {x: 972.3528, y: 545.022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &36227263
@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 144393771}
   - component: {fileID: 144393770}
   m_Layer: 0
-  m_Name: ' ---LoaderScenes---'
+  m_Name: ---LoaderScenes---
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -521,6 +521,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319268813}
   m_CullTransparentMesh: 1
+--- !u!1 &319776688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 319776689}
+  - component: {fileID: 319776690}
+  m_Layer: 0
+  m_Name: ---BotonSalir---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &319776689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319776688}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 525.12476, y: 229.05186, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &319776690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319776688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f83e0a8e89b7241970fd3eb17c7c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExitButton
 --- !u!1 &480911056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +1077,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.1461, y: -48.4896}
+  m_AnchoredPosition: {x: -7.1461, y: 18}
   m_SizeDelta: {x: 682.56, y: 190.1376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1065015642
@@ -1298,7 +1342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00002861, y: 209}
+  m_AnchoredPosition: {x: 0.000249, y: 336}
   m_SizeDelta: {x: 668.267, y: 192.956}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1477823337
@@ -1534,7 +1578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.1461, y: -274.776}
+  m_AnchoredPosition: {x: -7.1462, y: -366}
   m_SizeDelta: {x: 682.56, y: 190.2265}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1842083633
@@ -1581,8 +1625,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1412673649}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 319776690}
+        m_TargetAssemblyTypeName: ExitButton, Assembly-CSharp
         m_MethodName: Salir
         m_Mode: 1
         m_Arguments:
@@ -1716,3 +1760,4 @@ SceneRoots:
   - {fileID: 506876083}
   - {fileID: 1412673650}
   - {fileID: 144393771}
+  - {fileID: 319776689}
